@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'font1';
+    src: url('/stylesheet/SansitaSwashed-VariableFont_wght.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.tt {
+    display: flex;
+}
+
+.image {
+    width: 125px;
+    float: left;
+}
+
+.image img {
+    width: 100%;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a .fa {
+    font-size: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+.image-sport img {
+    width: 100%;
+}
+
+.col h2 {
+    font-family: 'font1';
+}
+
+.col span {
+    font-style: italic;
+    background-color: red;
+    color: white;
+}
+
+
+/*content*/
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content .col {
+    width: 350px;
+    height: 350px;
+    flex-basis: 30%;
+    padding: 15px;
+    border: 1px solid darkblue;
+    margin: 5px;
+    transition: transform 0.5s;
+}
+
+.content .col:hover {
+    transform: translateY(-15px);
+}
+
+.content .col img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/*footer*/
+
+.footer {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 15px;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 15px;
+}
