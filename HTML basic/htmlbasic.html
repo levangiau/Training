@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Click the button to check where if the string includes the specified value.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <p>Click the button to display the array values after the split.</p>
+
+    <button onclick="myFunction1()">Try it</button>
+
+    <p id="demo1"></p>
+</body>
+<script>
+    function myFunction() {
+        var str = "Hello world, welcome to the universe.";
+        var n = str.includes("world", 3);
+        document.getElementById("demo").innerHTML = n;
+    }
+
+    function myFunction1() {
+        var str = "How are you doing today?";
+        var res = str.split(" ");
+        document.getElementById("demo1").innerHTML = res;
+    }
+</script>
+
+</html>
